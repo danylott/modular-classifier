@@ -1,0 +1,23 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+-f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.5/index.html
+Cython==0.29.20
+detectron2==0.1.3+cpu
+Flask==1.1.2
+grpcio==1.29.0
+numpy==1.18.5
+torch==1.5.1+cpu
+torchvision==0.6.1+cpu
+opencv-python
+pycocotools>=2.0.1
+funcy
+shapely
+tensorflow-gpu==2.1
+scikit-image
+pymongo
+scipy
+argparse
+pyyaml==5.1
+schedule
+lmdb
+nltk
+natsort

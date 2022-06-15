@@ -1,0 +1,17 @@
+f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.6/index.html
+wheel
+pymongo
+Cython==0.29.20
+detectron2==0.2.1+cu102
+Flask==1.1.2
+grpcio==1.29.0
+numpy==1.18.5
+opencv-python
+pycocotools>=2.0.1
+funcy
+pytesseract
+torch==1.6.0
+torchvision==0.7.0
+python-crontab
+scikit-image
+pymongo==3.11.0

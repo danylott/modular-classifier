@@ -1,0 +1,15 @@
+__pycache__
+*__pycache__
+.history
+.vscode
+.DS_Store
+data
+models
+config/constants.py
+venv*
+craft/test
+images/color/*.png
+images/model/*.png
+images/size/*.png
+.idea
+.ipynb_checkpoints

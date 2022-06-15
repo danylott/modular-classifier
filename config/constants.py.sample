@@ -1,0 +1,46 @@
+# COMPUTER SPECIFIC INFO:
+MONGO_URL = "172.18.0.1:27017"
+COMPUTER_POSITION = 2
+MODEL_WEIGHT_PATH_PREFIX = ''
+
+# Only for server:
+COMPUTER_POSITION_LIST = [1, 2, 3, 4, 5, 6]
+
+NUM_CLASSES_DEFAULT = 71
+MODEL_WEIGHT_PATH_DEFAULT = 'models/model_71_front_augm.pth'
+CLASSES_DEFAULT = ['mare', 'core', 'harmoni', 'duiceida', 'newbalance', 'sandrafontan', 'fluchos', 'sacut', 'krackkids', 'pepejeans', 'positivity', 'fredperry', 'love', 'vans', 'krackcore', 'walk', 'sotavento', 'bryan', 'violeta', 'nike', 'arousa', 'brandy', 'geox', 'unisa', 'velilla', 'krackcore2', 'armani', 'clarks', 'levis_kids', 'mou', 'gg', 'lol', 'stonefly', 'roberto_torreta', 'courtset', 'krack398', 'wonders', 'emmshu', 'coolway', 'dulceida2', 'heritage', 'dacota', 'bryan2', 'rocio_camacho', 'angel_infantes', 'sandrafontan2', 'krackkids2', 'buonarotti', 'krackkids3', 'jenker', 'krackkids4', 'krackcore3', 'krackcore4', 'viguera', 'roberto_toretta2', 'krack_by_ied', 'isteria', 'krackcore5', 'krack_harmony', 'bprivate', 'krack_harmony2', 'krackcore6', 'milatrend', 'nice', 'krackcore7', 'sandra_fontan3', 'krackcore8', 'krackcore9', 'cossimo2', 'sandra_fontan4', 'roberto_torreta3']
+
+USE_GPU = False
+USE_PSPNET = False
+USE_BOX_TEXT_OCR = False
+
+# Extremely important to change this if you run with different path
+PATH_TO_IMAGE_DATASET_FOLDER = "/var/www/back-end/images/"
+PATH_TO_COCO_DATASET_FOLDER = "coco/"
+PATH_TO_COCO_CLASSES_MODIFIED_DATASET_FILE = "dataset/coco_classes.json"
+PATH_TO_TRAIN_JSON = PATH_TO_COCO_DATASET_FOLDER + 'train.json'
+PATH_TO_TEST_JSON = PATH_TO_COCO_DATASET_FOLDER + 'test.json'
+TRAIN_TEST_SPLIT_COEF = 0.2
+TRAIN_TEST_SPLIT_MIN_IMAGES = 3
+# the duration of detectron2 training
+MAX_TRAIN_ITERATIONS = 1200
+
+COMMAND_TO_RESTART_APP = 'pm2 restart flask-app'
+# the area intersection part to be sure, that this word is from that markup
+TEXT_MARKUP_THRESHOLD = 0.6
+# closer to 1 - just only text on the same height, closer to 1.5 - text can be bit upper or downer
+ONE_LEVEL_TEXT_COEF = 1
+# switcher to use PSPNET or detectron2 for sticker cropping
+BLACK_PIXELS_DIFFERENCE = 0.05
+# The MIN score for detectron, or use BOX OCR instead
+SCORE_THRESHOLD_FOR_BOX_OCR = 0.5
+
+PSPNET_RESNET_MODEL_WEIGHT_PATH = 'models/PSPNET_RESNET50_99mean.h5'
+CRAFT_MODEL_WEIGHT_PATH = 'models/craft_mlt_25k.pth'
+OCR_MODEL_WEIGHT_PATH = 'models/TPS-ResNet-BiLSTM-Attn-case-sensitive.pth'
+MODEL_CODE_128_WEIGHT_PATH = 'models/model_code_128.pth'
+
+TIME_TO_START_MODEL_TRAINING = "22:00"
+TIME_TO_START_MODEL_UPLOADING = "23:00"
+COMMAND_TO_STOP_APP = "pm2 stop flask-app"
+COMMAND_TO_RESTART_CRON_TASK = "pm2 restart cron-task"
